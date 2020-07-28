@@ -6,6 +6,7 @@ const OWM_API_KEY = process.env.OWM_API_KEY || 'invalid_key';
 const UNITS = process.env.UNITS || 'metric';
 
 /* GET home page. */
+
 router.get('/', function(req, res) {
   res.render('index', { weather: null, err: null });
 });
